@@ -8,7 +8,7 @@ function MainView() {
     e.preventDefault();
     console.log(user, pass);
     try {
-      await fetch('http://url-api/login', {
+      await fetch('http://localhost:3000/login', {  // hppt://ip-api:3000/login
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
